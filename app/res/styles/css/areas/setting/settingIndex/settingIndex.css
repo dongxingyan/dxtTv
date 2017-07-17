@@ -1,0 +1,212 @@
+.setting-warpper {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 4.6875vh;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.setting-warpper .setting-common {
+  width: 100vw;
+  height: 48.4375vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.setting-warpper .setting-common .setting-common1 {
+  width: 49.05660377vw;
+  height: 48.4375vh;
+  line-height: 48.4375vh;
+  border-radius: 2.83018868vw;
+  font-size: 3.20754717vw;
+  font-family: "HiraginoSansGB";
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+}
+.setting-warpper .setting-common .setting-common1:hover,
+.setting-warpper .setting-common .setting-common1:active,
+.setting-warpper .setting-common .setting-common1:focus {
+  background: #e5ba6d;
+  color: #fff;
+  font-size: 3.96226415vw;
+}
+.setting-warpper .setting-common .setting-common1:hover .pucharseIcon,
+.setting-warpper .setting-common .setting-common1:active .pucharseIcon,
+.setting-warpper .setting-common .setting-common1:focus .pucharseIcon {
+  background: url('../img/purchaseIcon1.png') center center no-repeat;
+  background-size: 100%;
+}
+.setting-warpper .setting-common .setting-common1:hover .passwordIcon,
+.setting-warpper .setting-common .setting-common1:active .passwordIcon,
+.setting-warpper .setting-common .setting-common1:focus .passwordIcon {
+  background: url('../img/passwordIcon1.png') center center no-repeat;
+  background-size: 100%;
+}
+.setting-warpper .setting-common .setting-common1:hover .serviceIcon,
+.setting-warpper .setting-common .setting-common1:active .serviceIcon,
+.setting-warpper .setting-common .setting-common1:focus .serviceIcon {
+  background: url('../img/serviceIcon1.png') center center no-repeat;
+  background-size: 100%;
+}
+.setting-warpper .setting-common .setting-common1:hover .aboutIcon,
+.setting-warpper .setting-common .setting-common1:active .aboutIcon,
+.setting-warpper .setting-common .setting-common1:focus .aboutIcon {
+  background: url('../img/aboutIcon1.png') center center no-repeat;
+  background-size: 100%;
+}
+.setting-warpper .setting-common .my-purchars {
+  color: #e5ba6d;
+  background: #fff;
+}
+.setting-warpper .setting-common .my-purchars .pucharseIcon {
+  width: 8.30188679vw;
+  height: 13.75vh;
+  margin-right: 4.71698113vw;
+  background: url('../img/purchaseIcon.png') center center no-repeat;
+  background-size: 100%;
+}
+.setting-warpper .setting-common .change-password {
+  color: #f17339;
+}
+.setting-warpper .setting-common .change-password .passwordIcon {
+  width: 6.60377358vw;
+  height: 13.75vh;
+  margin-right: 4.71698113vw;
+  background: url("../img/passwordIcon.png") center center no-repeat;
+  background-size: 100%;
+}
+.setting-warpper .setting-common .contact {
+  color: #54d67c;
+}
+.setting-warpper .setting-common .contact .serviceIcon {
+  width: 7.16981132vw;
+  height: 13.75vh;
+  margin-right: 4.71698113vw;
+  background: url('../img/serviceIcon.png') center center no-repeat;
+  background-size: 100%;
+}
+.setting-warpper .setting-common .about-us {
+  color: #c38beb;
+}
+.setting-warpper .setting-common .about-us .aboutIcon {
+  width: 7.9245283vw;
+  height: 13.125vh;
+  margin-right: 4.71698113vw;
+  background: url('../img/aboutIcon.png') center center no-repeat;
+  background-size: 100%;
+}
+.call-service-warpper {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.call-service-warpper .call-service-warp {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.call-service-warpper .call-service-warp .code {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45.28301887vw;
+  height: 46.875vh;
+  background: #30333c;
+  border-radius: 1.88679245vw;
+}
+.call-service-warpper .call-service-warp .code button {
+  width: 23.58490566vw;
+  height: 14.375vh;
+  border-style: none;
+  border-radius: 4.33962264vw;
+  background-color: #fff;
+  color: #E5BA6D;
+  font-size: 3.39622642vw;
+}
+.call-service-warpper .call-service-warp .code button:hover,
+.call-service-warpper .call-service-warp .code button:active,
+.call-service-warpper .call-service-warp .code button:focus {
+  color: #fff;
+  background: #E5BA6D;
+  font-size: 3.96226415vw;
+}
+.call-service-warpper .call-service-warp .create-success {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 83.01886792vw;
+  height: 103.125vh;
+  background: #30333c;
+  border-radius: 1.88679245vw;
+  color: #fff;
+  font-size: 3.96226415vw;
+}
+.call-service-warpper .call-service-warp .create-success h3 {
+  font-size: 5.66037736vw;
+  margin-top: 10.15625vh;
+}
+.call-service-warpper .call-service-warp .create-success .create-success-msg {
+  margin-top: 7.8125vh;
+}
+.call-service-warpper .call-service-warp .create-success .create-success-num {
+  margin-top: 6.25vh;
+}
+.call-service-warpper .call-service-warp .create-success .create-success-num span {
+  color: #23c1e3;
+}
+.call-service-warpper .call-service-warp .create-success .create-success-time {
+  margin-top: 6.25vh;
+}
+.call-service-warpper .call-service-warp .create-success button {
+  width: 30.18867925vw;
+  height: 16.875vh;
+  color: #14a9c9;
+  font-size: 3.39622642vw;
+  margin-top: 9.53125vh;
+  border-radius: 8.4375vh;
+  border: none;
+  background-color: #fff;
+}

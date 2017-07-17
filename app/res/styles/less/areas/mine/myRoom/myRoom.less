@@ -1,0 +1,112 @@
+@designWidth : 1020;
+@designHeight: 670;
+@wcell: 100/@designWidth;
+@hcell: 100/@designHeight;
+//
+//body{
+//  background:#fff;
+//}
+.myRoomWarpper{
+  width: @wcell*1020vw;
+  height: @hcell*670vh;
+  display:flex;
+  justify-content: space-between;
+  .exit-account{
+    display: flex;
+    align-items: center;
+    //justify-content: center;
+    flex-direction: column;
+    width: @wcell*490vw;
+    height:@hcell*670vh;
+    background:#fff;
+    border-radius:@hcell*30vh;
+    .R-avatar{
+        img{
+          width: @wcell*230vw;
+          height:@hcell*230vh;
+          //background:url("../img/avatar.png") center center no-repeat;
+          border-radius: 50%;
+          margin:@hcell*90vh auto 0;
+          border:5px solid #f1e9da;
+          background-size:100%;
+        }
+
+    }
+    .R-name{
+      height:@hcell*80vh;
+      line-height:@hcell*80vh;
+      color:#cfb782;
+      font-size:@wcell*36vw;
+      text-align:center;
+    }
+
+    .R-common{
+      height:@hcell*42vh;
+      line-height:@hcell*42vh;
+      font-size:@wcell*24vw;
+      text-align:center;
+      color:#848484;
+    }
+
+  }
+  .enter-myRoom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: center;
+    width: @wcell*490vw;
+    height:@hcell*670vh;
+    //margin-left: @wcell*50vw;
+    background:#fff;
+    border-radius:@hcell*30vh;
+    .R-pic{
+      img{
+        width: @wcell*230vw;
+        height:@hcell*230vh;
+        //background:url("../img/room.png") center center no-repeat;
+        border-radius: 50%;
+        margin:@hcell*90vh auto 0;
+        border:5px solid #f1e9da;
+        background-size:100%
+      }
+
+    }
+    .R-num{
+      height:@hcell*80vh;
+      line-height:@hcell*80vh;
+      color:#cfb782;
+      font-size:@wcell*36vw;
+      text-align:center;
+    }
+    .R-common{
+      height:@hcell*42vh;
+      line-height:@hcell*42vh;
+      font-size:@wcell*24vw;
+      text-align:center;
+      color:#848484;
+    }
+  }
+  .common{
+    width: @wcell*450vw;
+    height: @hcell*100vh;
+    line-height: @hcell*100vh;
+    font-size: @wcell*36vw;
+    border-radius: @hcell*50vh;
+    text-align:center;
+    background-color: #fff;
+    margin-top:@hcell*34vh;
+    color:#435062;
+    border:2px solid #eee;
+  }
+  .common:hover,.common:active,.common:focus{
+    background:#cdb17c;
+    color:#fff;
+    font-size: @wcell*42vw;
+    border:none;
+  }
+  .exitBtn,.enterBtn{
+    //background:#e2d2a8;
+
+  }
+}
+

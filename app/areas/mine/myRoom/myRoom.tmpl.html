@@ -1,0 +1,28 @@
+<div class="myRoomWarpper">
+    <div class="exit-account all">
+        <div class="R-avatar">
+            <img ng-src="{{data.avatarUrl}}" ng-if="data.hasAvatar" alt="">
+            <img src="./res/img/avatar.png" ng-if="!data.hasAvatar" alt="">
+        </div>
+        <div class="R-name">{{data.damyName}}</div>
+        <p class="R-damyName R-common">电信通号：{{data.damyNum}}</p>
+        <p class="R-telNum R-common">手机号：{{data.telNum}}</p>
+        <div class="R-exit">
+            <button class="common exitBtn" set-focus ng-click="actions.exit()" ng-keydown="bindingKeydownleft($event)">退出当前账号</button>
+
+        </div>
+    </div>
+    <div class="enter-myRoom all">
+        <div class="R-pic">
+            <img src="./res/img/room.png" alt="">
+        </div>
+        <div class="R-name R-common">我的房间号</div>
+        <p class="R-num">{{myMeetingRoom.meetingRoomNum}}</p>
+        <p class="R-telNum R-common">剩余时长：{{data.remainTime | durationFilter}}</p>
+        <div class="R-enter">
+            <button class="common enterBtn"  ng-click="actions.enterRoom()" ng-keydown="bindingKeydownright($event)">进入我的房间</button>
+
+        </div>
+
+    </div>
+</div>

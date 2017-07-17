@@ -1,0 +1,197 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/index_bg1.png");
+  background-size: 100vw 100vh;
+}
+.header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 6.66666667vh;
+  padding-right: 0;
+  font-size: 1.875vw;
+  font-family: "PingFang SC";
+  color: #fff;
+}
+.username {
+  line-height: 7.40740741vh;
+  height: 7.40740741vh;
+  max-width: 10.41666667vw;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.meetingRoomNum {
+  margin-left: 2.08333333vw;
+  line-height: 7.40740741vh;
+}
+.meeting-room-name {
+  max-width: 27.08333333vw;
+  text-overflow: ellipsis;
+}
+.remainTime {
+  margin-left: 6.25vw;
+  line-height: 7.40740741vh;
+  padding-right: 1.04166667vw;
+}
+.btn-pay {
+  width: 7.8125vw;
+  height: 6.48148148vh;
+  margin-left: 0.52083333vw;
+  line-height: 6.48148148vh;
+  text-align: center;
+  background: #ffffff;
+  font-size: 1.77083333vw;
+  font-family: "PingFang SC";
+  color: #c29f64;
+  border-radius: 3.24074074vh;
+}
+.btn-pwd {
+  width: 15.625vw;
+  height: 6.48148148vh;
+  margin-left: 1.82291667vw;
+  margin-right: 3.125vw;
+  line-height: 6.48148148vh;
+  text-align: center;
+  background: #ffffff;
+  font-size: 1.77083333vw;
+  font-family: "PingFang SC";
+  color: #c29f64;
+  border-radius: 3.24074074vh;
+}
+.btn-attend {
+  display: block;
+  width: 23.4375vw;
+  height: 8.14814815vh;
+  line-height: 8.14814815vh;
+  text-align: center;
+  background: #ffffff;
+  font-size: 1.77083333vw;
+  font-family: "PingFang SC";
+  color: #c29f64;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -6.48148148vh;
+  margin-left: -8.85416667vw;
+  border-radius: 4.07407407vh;
+}
+.inviteList {
+  overflow-x: auto ;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 90.625vw;
+  height: 18.98148148vh;
+  position: absolute;
+  bottom: 5.55555556vh;
+  left: 0;
+  padding-left: 4.16666667vw;
+}
+.inviteList li {
+  display: inline-block;
+  overflow: hidden;
+  overflow-x: auto ;
+  margin-left: 1.04166667vw;
+  width: 21.09375vw;
+  height: 18.98148148vh;
+  padding-left: 0.26041667vw;
+  padding-top: 0.46296296vh;
+  font-size: 1.35416667vh;
+}
+.inviteList li a {
+  display: block;
+  color: #fff;
+  width: 20.57291667vw;
+  height: 17.12962963vh;
+  background: rgba(255, 255, 255, 0.3);
+  background-size: cover;
+  border-radius: 0.52083333vw;
+}
+.inviteList li a:active,
+.inviteList li a:focus,
+.inviteList li a:hover {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  overflow: hidden;
+  border: 1px solid lightblue;
+  background-color: white;
+  color: #14a9c9;
+  box-shadow: none;
+}
+.inviteList li .title-time {
+  padding: 2.08333333vh 2.08333333vh;
+  width: 17.70833333vw;
+}
+.inviteList li .meeting-title {
+  font-size: 1.875vw;
+  width: 17.70833333vw;
+  line-height: 5.20833333vh;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.inviteList li .meeting-time {
+  font-size: 1.875vw;
+  width: 17.70833333vw;
+  line-height: 6.25vh;
+  overflow: hidden;
+}
+.inviteList .title-time-first {
+  width: 31.51041667vw;
+}
+.inviteList .title-time-first a {
+  width: 30.98958333vw;
+}
+.inviteList .title-time-first .time {
+  float: right;
+  width: 9.375vw;
+  height: 17.12962963vh;
+  line-height: 17.12962963vh;
+  font-size: 1.875vw;
+  text-indent: 2.86458333vw;
+  background: url("../img/timer.png") no-repeat 0 5.55555556vh;
+  background-size: 2.60416667vw 3.125vw;
+}
+.inviteList .title-time-first .time-start {
+  background: none;
+  text-indent: -2.86458333vw;
+}
+a:hover,
+a:active,
+a:focus {
+  background: #cdb17c;
+  color: #fff;
+}
+button {
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+div.input-pwd-box {
+  background: #fff;
+  border-radius: 1.5625vw;
+}
+div.input-pwd-box .pwd-btn button.fix2_3:hover,
+div.input-pwd-box .pwd-btn button.fix2_3:active,
+div.input-pwd-box .pwd-btn button.fix2_3:focus {
+  font-size: 1.97916667vw;
+  background: #dac698;
+  color: #fff;
+}
+div.input-pwd-box .pwd-btn button:active,
+div.input-pwd-box .pwd-btn button:hover,
+div.input-pwd-box .pwd-btn button:focus {
+  background: #dac698;
+  color: #fff;
+}
+input:hover,
+input:active,
+input:focus {
+  border: 0.10416667vw solid #d0b581;
+}
+body {
+  background: transparent;
+}

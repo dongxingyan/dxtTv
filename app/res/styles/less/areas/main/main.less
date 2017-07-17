@@ -1,0 +1,235 @@
+@designWidth : 1920;
+@designHeight: 1080;
+@wcell: 100/@designWidth;
+@hcell: 100/@designHeight;
+.wrapper{
+  width: @wcell*1920vw;
+  height: @hcell*1080vh;
+  background: url("../img/index_bg1.png");
+  background-size: @wcell*1920vw @hcell*1080vh;
+  //border-radius: @hcell*30vh;
+
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: @hcell*72vh;
+  padding-right: 0;
+  font-size: @wcell*36vw;
+  font-family: "PingFang SC";
+  color: #fff;
+}
+
+.username{
+  line-height: @hcell*80vh;
+  height: @hcell*80vh;
+  max-width: @wcell*200vw;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space:nowrap;
+}
+.meetingRoomNum{
+  margin-left: @wcell*40vw;
+  line-height: @hcell*80vh;
+}
+.meeting-room-name{
+  max-width: @wcell*520vw;
+  text-overflow:ellipsis;
+}
+.remainTime{
+  margin-left: @wcell*120vw;
+  line-height: @hcell*80vh;
+  padding-right:@wcell*20vw;
+}
+.btn-pay{
+  width: @wcell*150vw;
+  height: @hcell*70vh;
+  margin-left: @wcell*10vw;
+  line-height: @hcell*70vh;
+  text-align: center;
+  background: rgb(255,255,255);
+  font-size: @wcell*34vw;
+  font-family: "PingFang SC";
+  color: rgb(194, 159, 100);
+  border-radius: @hcell*35vh;
+  //border: 2px solid rgba(255,255,255,.2);
+}
+.btn-pwd{
+  width: @wcell*300vw;
+  height: @hcell*70vh;
+  margin-left: @wcell*35vw;
+  margin-right: @wcell*60vw;
+  line-height: @hcell*70vh;
+  text-align: center;
+  background: rgb(255,255,255);
+  font-size: @wcell*34vw;
+  font-family: "PingFang SC";
+  color: rgb(194, 159, 100);
+  border-radius: @hcell*35vh;
+  //border: 2px solid rgba(255,255,255,.2);
+
+}
+
+.btn-attend{
+  display: block;
+  width: @wcell*450vw;
+  height: @hcell*88vh;
+  line-height: @hcell*88vh;
+  text-align: center;
+  background: rgb(255,255,255);
+  font-size: @wcell*34vw;
+  font-family: "PingFang SC";
+  color: rgb(194, 159, 100);
+  position: fixed;
+  top:50%;
+  left: 50%;
+  margin-top: -@hcell*70vh;
+  margin-left: -@wcell*170vw;
+  border-radius: @hcell*44vh;
+  //border: 2px solid rgba(255,255,255,.2);
+
+
+}
+.inviteList{
+  overflow-x: auto ;
+  overflow-y : hidden;
+  white-space:nowrap;
+  width: @wcell*1740vw;
+  height: @hcell*205vh;
+  position: absolute;
+  bottom:@hcell*60vh;
+  left:0;
+  padding-left: @wcell*80vw;
+  li{
+    display: inline-block;
+    overflow: hidden;
+    overflow-x: auto ;
+    margin-left: @wcell*20vw;
+    width: @wcell*405vw;
+    height: @hcell*205vh;
+    padding-left:@wcell*5vw;
+    padding-top:@hcell*5vh;
+    font-size: @wcell*26vh;
+    a{
+      display: block;
+      color: #fff;
+      width: @wcell*395vw;
+      height: @hcell*185vh;
+      background: rgba(255, 255, 255, 0.3);
+      background-size:cover;
+      border-radius: @wcell*10vw;
+    }
+    a:active,a:focus,a:hover{
+      transform: scale(1);
+      overflow: hidden;
+      border: 1px solid lightblue;
+      background-color: white;
+      color: rgb(20, 169, 201);
+      box-shadow: none;
+      
+    }
+    .title-time{
+       padding: @wcell*40vh @wcell*40vh;
+       width: @wcell*340vw;
+    }
+
+    .meeting-title{
+      font-size: @wcell*36vw;
+      width: @wcell*340vw;
+      line-height: @wcell*100vh;
+      overflow: hidden;
+      white-space:nowrap; 
+      text-overflow:ellipsis;
+    }
+    .meeting-time{
+      font-size: @wcell*36vw;
+      width: @wcell*340vw;
+      line-height: @wcell*120vh;
+      overflow: hidden;
+    }
+  }
+  .title-time-first{
+    width: @wcell*605vw;
+    a{
+      width: @wcell*595vw;
+    }
+    .time{
+      float: right;
+      width: @wcell*180vw;
+      height: @hcell*185vh;
+      line-height: @hcell*185vh;
+      font-size: @wcell*36vw;
+      text-indent: @wcell*55vw;
+      background: url("../img/timer.png") no-repeat 0  @hcell*60vh;
+      background-size:@wcell*50vw @wcell*60vw;
+    }
+    .time-start{
+      background:none;
+      text-indent: -@wcell*55vw;
+    }
+  }
+}
+a{
+  //border:2px solid rgba(0,0,0,.0);
+}
+a:hover,a:active,a:focus{
+  //-webkit-box-shadow:0 0 38px #01fdff;
+  //-moz-box-shadow:0 0 38px #01fdff;
+  //box-shadow:0 0 38px #01fdff;
+  //border: 2px solid #01fdff;
+  //transform: scale(1.05);
+  //background: #fff;
+  //color:#14a9c9;
+  background:#cdb17c;
+  color:#fff;
+}
+button{
+  border:2px solid rgba(0,0,0,.0);
+}
+
+div.input-pwd-box{
+  background:#fff;
+  border-radius:@wcell*30vw;
+  .pwd-btn{
+    button.fix2_3,button.fix2_3,button.fix2_3{
+
+    }
+
+    button.fix2_3:hover,button.fix2_3:active,button.fix2_3:focus{
+      //-webkit-box-shadow:0 0 20px #01fdff;
+      //-moz-box-shadow:0 0 20px #01fdff;
+      //box-shadow:0 0 20px #01fdff;
+      //border: 2px solid #01fdff;
+      //transform: scale(1.15);
+      font-size:@wcell*38vw;
+      background: #dac698;
+      color:#fff;
+    }
+    button:active,button:hover,button:focus{
+      background: #dac698;
+      color:#fff;
+    }
+  }
+}
+
+button:hover,button:active,button:focus{
+  //-webkit-box-shadow:0 0 20px #01fdff;
+  //-moz-box-shadow:0 0 20px #01fdff;
+  //box-shadow:0 0 20px #01fdff;
+  //border: 2px solid #01fdff;
+  //background:#cdb17c;
+  //color:#fff;
+  //font-size: @wcell*42vw;
+}
+
+input:hover,input:active,input:focus{
+  //-webkit-box-shadow:0 0 20px #d0b581;
+  //-moz-box-shadow:0 0 20px #d0b581;
+  //box-shadow:0 0 20px #d0b581;
+  border: @wcell*2vw solid #d0b581;
+}
+body{
+  //background: url("../img/index_bg1.png");
+  //background-size: @wcell*1920vw @hcell*1080vh;
+  background:transparent;
+}

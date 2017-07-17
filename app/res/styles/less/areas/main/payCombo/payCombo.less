@@ -1,0 +1,142 @@
+@designWidth: 1920;
+@designHeight: 1080;
+@wcell: 100/@designWidth;
+@hcell: 100/@designHeight;
+
+.combo-wrap {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: @wcell*1920vw;
+  height: @hcell*1080vh;
+  margin: 0 auto;
+  background: url("../img/combo_bg1.png");
+  background-size: @wcell*1920vw @hcell*1080vh;
+  border-radius: @hcell*30vh;
+
+  .combo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: @wcell*1776vw;
+    margin-top: @hcell*88vh;
+    color: #fff;
+    font-size:@wcell*60vw;
+
+    h3 {
+      font-size: @wcell*60vw;
+    }
+
+  }
+  .combo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: @wcell*1528vw;
+    margin-top: @hcell*100vh;
+    .title-time {
+      height:@hcell*90vh;
+      line-height:@hcell*90vh;
+      font-size: @wcell*34vw;
+      margin-left: @wcell*46vw;
+      padding-left: @wcell*46vw;
+      background: url("../img/time-icon.png") no-repeat left @hcell*38vh;
+      background-size: @wcell*38vw @wcell*38vw;
+      color:#fff;
+
+      span {
+        padding: 0 @wcell*10vw;
+        font-size: @wcell*60vw;
+        color:#a7ff58;
+      }
+    }
+    h4 {
+      padding-bottom: @hcell*44vh;
+      color: #fff;
+      font-size: 2.8vw;
+    }
+    .combo-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: @wcell*1528vw;
+      // height:@hcell*550vh;
+      padding: @wcell*30vw @wcell*30vw;
+      overflow: hidden;
+      a {
+        margin-top: @hcell*44vh;
+        position: relative;
+        border-radius: @wcell*20vw;
+
+      }
+
+      li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+        width: @wcell*740vw;
+        height: @hcell*212vh;
+        background:#fff;
+        list-style: none;
+        border-radius: @wcell*20vw;
+
+      }
+      .list1{
+        color:#e5ba6d
+      }
+      .list2{
+        color:#f17339;
+      }
+      .list3{
+        color:#54d67c;
+      }
+      .list4{
+        color:#c38beb;
+      }
+      li::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        background: url(../img/monthlyIcon.png) no-repeat;
+        width: @wcell*95vw;
+        height: @hcell*95vh;
+        top:-@hcell*1vh;
+        right:0;
+        background-size: @wcell*150vw @hcell*95vh;
+      }
+
+      a:focus,a:active,a:hover{
+      	li{
+      		color: #fff;
+      		background-color: #e5ba6d;
+      		//border: @wcell*1vw solid #4bd7ff;
+      		//-webkit-box-shadow:0 0 @wcell*20vw #4bd7ff;
+      		//-moz-box-shadow:0 0 @wcell*20vw #4bd7ff;
+      		//box-shadow:0 0 @wcell*20vw #4bd7ff;
+      	}
+      }
+       //.active{
+       //   color: #14a9c9;
+       //   background-color: #fff;
+       //   border: @wcell*1vw solid #4bd7ff;
+       //   -webkit-box-shadow:0 0 @wcell*50vw #4bd7ff;
+       //   -moz-box-shadow:0 0 @wcell*50vw #4bd7ff;
+       //   box-shadow:0 0 @wcell*50vw #4bd7ff;
+       // }
+    }
+    .list-time {
+      font-size: @wcell*48vw;
+      margin-left: @wcell*64vw;
+      span {
+        font-size: @wcell*100vw;
+      }
+    }
+    .list-money {
+      font-size: @wcell*48vw;
+      margin-right: @wcell*100vw;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+
+@designWidth: 1020;
+@designHeight: 670;
+@wcell: 100/@designWidth;
+@hcell: 100/@designHeight;
+
+
+.my-purchase-wrapper{
+  //width:@wcell*1200vw;
+  height:@hcell*670vh;
+  background:#fff;
+  border-radius:@hcell*30vh;
+  overflow:hidden;
+  .helper{
+    width:@wcell*900vw;
+    height:@hcell*650vh;
+    margin:0 auto;
+    font-family:"miscroft yahei";
+    h3{
+      font-size:@hcell*26vh;
+      padding:@hcell*18vh 0;
+      //margin-bottom:@hcell*10vh;
+      border-bottom:@wcell*1vw solid #eee;
+    }
+    .what{
+      margin-top:0;
+    }
+    p{
+      font-size:@hcell*20vh;
+      padding:@hcell*10 0;
+    }
+  }
+
+
+    //以前是购买记录，现已修改成帮助
+    //table{
+    //  width:@wcell*1000vw;
+    //  margin:0 auto;
+    //  font-family: "PingFang SC";
+    //  color: rgb(67, 80, 98);
+    //  text-align:center;
+    //  border-collapse: collapse;
+    //  thead,tfoot{
+    //    font-size:@wcell*36vw;
+    //    tr{
+    //      height:@hcell*60vh;
+    //      line-height:@hcell*60vh;
+    //    }
+    //    .prevIcon,.nextIcon{
+    //      height:@hcell*20vh;
+    //    }
+    //  }
+    //  tbody{
+    //    font-size: @wcell*26vw;
+    //
+    //    tr{
+    //      width:@wcell*1000vw;
+    //      height:@hcell*110vh;
+    //      line-height:@hcell*110vh;
+    //      border-radius:@hcell*20vh;
+    //      &:hover,&:active,&:focus,&.active{
+    //        color:#fff;
+    //        background: url("../img/table-radius.png") center center no-repeat;
+    //        background-size:@wcell*1000vw,@hcell*110vh;
+    //      }
+    //    }
+    //
+    //  }
+    //  td, th {
+    //
+    //    white-space: nowrap;
+    //    text-overflow: ellipsis;
+    //    padding: 0 @wcell*10vw;
+    //  }
+    //}
+
+}

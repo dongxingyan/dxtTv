@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>视频会议</title>
+
+    <!--<script src="https://jenkins.pbsedu.com/target/target-script-min.js#anonymous"></script>-->
+    <style>
+        .loading-shade {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 10000;
+            background-color: rgba(0, 0, 0, .6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 5vh;
+        }
+        
+        .spanner {
+            width: 15vh;
+            height: 15vh;
+            border-radius: 7.5vh;
+            border-top: 2vh solid sandybrown;
+            animation: circle 10s infinite;
+        }
+        
+        @keyframes circle {
+            0% {
+                transform: rotateZ(0deg)
+            }
+            50% {
+                transform: rotateZ(1800deg)
+            }
+            100% {
+                transform: rotateZ(3600deg)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div ng-show="!root_loader">
+        <!--<div class="loading-shade">-->
+
+            <!--<div class="spanner" style=""></div>-->
+            <!--<div>加载中，请稍候</div>-->
+        <!--</div>-->
+    </div>
+    <div ui-view></div>
+
+    <!--调试器-->
+    <div style="display:none;position:absolute;height:10vh;font-size:8vh;top:0;left:0;background-color:rgba(255,255,255,.4)"
+        id='msger'></div>
+    <!--调试器end-->
+
+    <link rel="stylesheet" href="./res/styles/site.css">
+    <link rel="stylesheet" href="./res/styles/bundle.css">
+    <script src="./libs/jquery/dist/jquery.js"></script>
+    <script src="./libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./libs/angular/angular.js"></script>
+    <script src="./libs/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script src="./libs/angular-ui-router/release/angular-ui-router.js"></script>
+    <!--<script type="text/javascript" src="https://api-dxt-sit.cloudp.cc/cloudp/app/open/dxtapp.min.js"></script>-->
+    <!-- 正式环境替换成下面的js -->
+    <script type="text/javascript" src="https://api-dxt-sit.cloudp.cc/cloudp/app/open/dxtapp.js"></script>
+    <!--<script type="text/javascript" src="https://api-dxt.cloudp.cc/cloudp/app/open/dxtapp.js"></script>-->
+    <script src="./bundle.js"></script>
+
+    <!-- <script src="http://118.144.155.84:9999/target/target-script-min.js#anonymous"></script> -->
+
+
+</body>
+
+</html>

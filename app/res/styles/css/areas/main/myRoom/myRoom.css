@@ -1,0 +1,103 @@
+.myRoomWarpper {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.myRoomWarpper .exit-account {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 48.03921569vw;
+  height: 100vh;
+  background: #fff;
+  border-radius: 4.47761194vh;
+}
+.myRoomWarpper .exit-account .R-avatar img {
+  width: 23.52941176vw;
+  height: 35.82089552vh;
+  border-radius: 50%;
+  margin: 13.43283582vh auto 0;
+  background-size: 100%;
+}
+.myRoomWarpper .exit-account .R-name {
+  height: 11.94029851vh;
+  line-height: 11.94029851vh;
+  color: #cfb782;
+  font-size: 3.52941176vw;
+  text-align: center;
+}
+.myRoomWarpper .exit-account .R-common {
+  height: 6.26865672vh;
+  line-height: 6.26865672vh;
+  font-size: 2.35294118vw;
+  text-align: center;
+  color: #848484;
+}
+.myRoomWarpper .enter-myRoom {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 48.03921569vw;
+  height: 100vh;
+  background: #fff;
+  border-radius: 4.47761194vh;
+}
+.myRoomWarpper .enter-myRoom .R-pic img {
+  width: 23.52941176vw;
+  height: 35.82089552vh;
+  border-radius: 50%;
+  margin: 12.68656716vh auto 0;
+  border: 5px solid #f1e9da;
+  background-size: 100%;
+}
+.myRoomWarpper .enter-myRoom .R-num {
+  height: 11.94029851vh;
+  line-height: 11.94029851vh;
+  color: #cfb782;
+  font-size: 3.52941176vw;
+  text-align: center;
+}
+.myRoomWarpper .enter-myRoom .R-common {
+  height: 6.26865672vh;
+  line-height: 6.26865672vh;
+  font-size: 2.35294118vw;
+  text-align: center;
+  color: #848484;
+}
+.myRoomWarpper .common {
+  width: 44.11764706vw;
+  height: 14.92537313vh;
+  line-height: 14.92537313vh;
+  font-size: 3.52941176vw;
+  border-radius: 7.46268657vh;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 5.07462687vh;
+  color: #435062;
+  border: 2px solid #eee;
+}
+.myRoomWarpper .common:hover,
+.myRoomWarpper .common:active,
+.myRoomWarpper .common:focus {
+  background: #cdb17c;
+  color: #fff;
+  font-size: 4.11764706vw;
+  border: none;
+}

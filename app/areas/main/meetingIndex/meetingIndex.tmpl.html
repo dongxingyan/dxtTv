@@ -1,0 +1,76 @@
+<div class="wrapper">
+    <div class="header">
+        <div>
+            <div class="fl username meeting-room-name"><span ng-bind="getVmrName()"></span></div>
+            <div class="fl meetingRoomNum">房间号:<span ng-bind="myMeetingRoom.meetingRoomNum"></span></div>
+        </div>
+        <div>
+            <div class="fl remainTime">剩余时长: <span style="color:#fff;font-size:2.5vw"
+                                                   ng-bind="data.remainTime |durationFilter"></span>分钟
+            </div>
+            <a class="fl btn-pay" href="javascript:;" ng-click="actions.gotoPayCombo()" on-click="return false">充值</a>
+            <a class="fl btn-pwd" href="javascript:;" ng-click="actions.setMeeting()">设置参会密码</a>
+        </div>
+    </div>
+    <!-- <pop-box tip="{{data.tip}}" showtime="data.showtime" isshow="data" ng-show="data.isshow" ></pop-box> -->
+    <a href="javascript:;" class="btn-attend" ng-click="actions.startMeeting(true)" set-focus>开始会议</a>
+    <ul class="inviteList">
+        <li ng-click="actions.startMeeting(data.invitationRecords.head.show)" class="title-time-first"
+            ng-show="data.invitationRecords.head.show">
+            <a href="javascript:;">
+                <div class="title-time  fl">
+                    <h2 class="meeting-title">{{data.invitationRecords.head.theme||'无主题'}}</h2>
+                    <span class="meeting-time">{{data.invitationRecords.head.startTime | meetingTimeFilter}}</span>
+                </div>
+
+                <div class="time fr time-start" ng-show="data.invitationRecords.head.start">
+                    点击开始会议
+                </div>
+                <div class="time fr" ng-show="!data.invitationRecords.head.start">
+                    {{data.invitationRecords.head.hour}}:{{data.invitationRecords.head.second}}
+                </div>
+            </a>
+        </li>
+        <li ng-repeat="item in data.invitationRecords.list" class="" ng-keydown="actions.scroll($event,$last,$first)">
+            <a href="javascript:;">
+                <div class="title-time fl">
+                    <h2 class="meeting-title">{{item.theme==''?'无主题':item.theme}}</h2>
+                    <span class="meeting-time">{{item.startTime | meetingTimeFilter}}</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<script type="text/ng-template" id="pwd-wrapper.html">
+    <div class="pwd-wrapper">
+        <div class="pwd-wrap">
+            <div class="input-pwd-box">
+                <h3>访客密码</h3>
+                <form name="pwdFrom">
+                    <input class="pwd-text" type="text" placeholder="参会密码由6位数字组成" ng-model="data.password"
+                           ng-minlength="6" ng-maxlength="6" ng-keydown="inputClick($event)" required >
+                    <p class="pwd-tip" ng-model="data.pwdTip">{{data.pwdTip}}</p>
+                    <div class="pwd-btn">
+                        <button class="pwd-confirm fix2_3" ng-click="confirm()" ng-keydown="btnClickTurn($event)">确定</button>
+                        <button class="pwd-cancel fix2_3" ng-click="cancel()" ng-keydown="btnClick($event)">取消</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/ng-template" id="low-wrapper.html">
+    <div class="wrapper">
+        <div class="pwd-wrap">
+            <div class="input-pwd-box">
+                <h3 class="pay-low">您的会客厅剩余时间不足，请充值！</h3>
+                <div class="pwd-btn pay-low-btn">
+                    <button class="pwd-confirm" ng-keydown='confirmKeydown($event)' ng-click="confirm()" set-focus>去充值
+                    </button>
+                    <button class="pwd-cancel" ng-keydown='cancelKeydown($event)' ng-click="cancel()">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+

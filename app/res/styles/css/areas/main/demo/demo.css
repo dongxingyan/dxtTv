@@ -1,0 +1,67 @@
+.demoWarpper {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 3.57142857vw;
+}
+.demoWarpper .exit-account {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 48.21428571vw;
+  height: 100vh;
+  background: #fff;
+  border-radius: 2.67857143vw;
+}
+.demoWarpper .enter-myRoom {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 48.21428571vw;
+  height: 100vh;
+  background: #fff;
+  border-radius: 2.67857143vw;
+}
+.content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.common {
+  width: 39.28571429vw;
+  height: 16vh;
+  line-height: 16vh;
+  font-size: 3.21428571vw;
+  border-radius: 8vh;
+  border: none;
+  text-align: center;
+  font-weight: 700;
+  background-color: #fff;
+}
+.exitBtn {
+  background: #e2d2a8;
+  color: #fff;
+}
+.enterBtn {
+  color: #000;
+}
+.create-tip {
+  height: 5.35714286vw;
+  line-height: 5.35714286vw;
+  margin-bottom: 4.46428571vw;
+  color: red;
+}

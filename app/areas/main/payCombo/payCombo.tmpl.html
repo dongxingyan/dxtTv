@@ -1,0 +1,56 @@
+<div class="combo-wrap">
+	<div class="combo-title">
+		<h3>充值</h3>
+
+	</div>
+	<div class="combo-content">
+		<div class="title-time">
+			剩余时间<span ng-bind="data.remainTime | durationFilter"></span>分钟
+		</div>
+		<!--<h4>请选择您要购买的视频会客包</h4>-->
+		<ul class="combo-list">
+			<!--<a href="" ng-repeat="item in data.combo" ng-click="actions.select(item.price,item.duration)" set-focus index="$index">-->
+				<!--<li  class="active" >-->
+					<!--<div class="list-time"><span ng-bind="item.duration | durationFilter"></span>分钟</div>-->
+					<!--<div class="list-money">¥<span>{{item.price | priceFilter}}</span>元</div>-->
+				<!--</li>-->
+			<!--</a>-->
+
+			<a href="" state-id='pclt' key-down='to#"pclb"' key-up='to#"pclb"' key-left='to#"pcrt"' key-right='to#"pcrt"' ng-click="actions.select(data.combo[0].id,data.combo[0].price,data.combo[0].duration,data.combo[0].validPeriod)"
+			    set-focus index="$index">
+				<li class="active list1">
+					<div class="list-time"><span ng-bind="data.combo[0].duration | durationFilter"></span>分钟</div>
+					<div class="list-money">¥<span>{{data.combo[0].price | priceFilter}}</span>元</div>
+				</li>
+			</a>
+
+
+			<a href="" state-id='pcrt' key-down='to#"pcrb"' key-up='to#"pcrb"' key-left='to#"pclt"' key-right='to#"pclt"' ng-click="actions.select(data.combo[1].id,data.combo[1].price,data.combo[1].duration,data.combo[1].validPeriod)"
+			    set-focus index="$index">
+				<li class="active list2">
+					<div class="list-time"><span ng-bind="data.combo[1].duration | durationFilter"></span>分钟</div>
+					<div class="list-money">¥<span>{{data.combo[1].price | priceFilter}}</span>元</div>
+				</li>
+			</a>
+
+
+			<a href="" state-id='pclb' key-down='to#"pclt"' key-up='to#"pclt"' key-left='to#"pcrb"' key-right='to#"pcrb"' ng-click="actions.select(data.combo[2].id,data.combo[2].price,data.combo[2].duration,data.combo[2].validPeriod)"
+			    set-focus index="$index">
+				<li class="active list3">
+					<div class="list-time"><span ng-bind="data.combo[2].duration | durationFilter"></span>分钟</div>
+					<div class="list-money">¥<span>{{data.combo[2].price | priceFilter}}</span>元</div>
+				</li>
+			</a>
+
+
+			<a href="" state-id='pcrb' key-down='to#"pcrt"' key-up='to#"pcrt"' key-left='to#"pclb"' key-right='to#"pclb"' ng-click="actions.select(data.combo[3].id,data.combo[3].price,data.combo[3].duration,data.combo[3].validPeriod)"
+			    set-focus index="$index">
+				<li class="active list4">
+					<div class="list-time"><span ng-bind="data.combo[3].duration | durationFilter"></span>分钟</div>
+					<div class="list-money">¥<span>{{data.combo[3].price | priceFilter}}</span>元</div>
+				</li>
+			</a>
+
+		</ul>
+	</div>
+	</div>

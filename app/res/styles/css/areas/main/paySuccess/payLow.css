@@ -1,0 +1,85 @@
+.pay-success-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/combo_bg1.png");
+  background-size: 100vw 100vh;
+}
+.pay-success-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 53.125vw;
+  height: 64.81481481vh;
+  background: #fff;
+  border-radius: 2.77777778vh;
+}
+.pay-success-wrap h3 {
+  width: 36.45833333vw;
+  text-align: center;
+  font-size: 2.60416667vw;
+  color: #4a4a4a;
+}
+.pay-success-wrap img {
+  margin-top: 2.77777778vh;
+  width: 10.625vw;
+  height: 10.625vw;
+}
+.pay-success-wrap p {
+  margin-top: 2.77777778vh;
+  width: 19.58333333vw;
+  text-align: center;
+  font-size: 1.875vw;
+  color: #4a4a4a;
+}
+.pay-success-wrap .success-btn {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: center;
+      -ms-flex-direction: center;
+          flex-direction: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 36.45833333vw;
+  margin-top: 2.77777778vh;
+}
+.pay-success-wrap .success-btn button {
+  width: 11.45833333vw;
+  height: 7.87037037vh;
+  border-radius: 4.16666667vh;
+  color: #fff;
+  font-size: 1.875vw;
+  font-family: "PingFang SC";
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  border: none;
+  background: #c7c7c7;
+}
+.pay-success-wrap .success-btn button:focus {
+  background: #d1ac6f;
+}
+.pay-success-wrap .success-num {
+  display: inline-block;
+  margin: 0 0.52083333vw;
+  font-size: 3.64583333vw;
+}

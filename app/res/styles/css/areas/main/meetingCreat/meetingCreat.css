@@ -1,0 +1,136 @@
+.meetingCreateWarpper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/create_bg.png");
+  background-size: 100vw 100vh;
+}
+.create-my-meeting {
+  width: 22.91666667vw;
+  height: 10vh;
+  color: #14a9c9;
+  font-size: 1.875vw;
+  border-radius: 5vh;
+  border: none;
+  background-color: #fff;
+}
+.create-tip {
+  height: 3.125vw;
+  line-height: 3.125vw;
+  margin-bottom: 2.60416667vw;
+  color: red;
+}
+.meeting-create-warpper {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.meeting-create-warpper .meeting-create-warp {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.meeting-create-warpper .meeting-create-warp .code {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45.83333333vw;
+  height: 27.77777778vh;
+  background: #30333c;
+  border-radius: 1.04166667vw;
+}
+.meeting-create-warpper .meeting-create-warp .code h3 {
+  text-align: center;
+  margin-top: 5.55555556vh;
+  line-height: 3.125vw;
+  font-size: 3.125vw;
+  color: #fff;
+}
+.meeting-create-warpper .meeting-create-warp .code .pwd-btn {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 31.25vw;
+  height: 8.51851852vh;
+  margin: 3.7037037vh auto;
+}
+.meeting-create-warpper .meeting-create-warp .code .pwd-btn button {
+  width: 13.02083333vw;
+  height: 8.51851852vh;
+  border-style: none;
+  border-radius: 2.39583333vw;
+  background-color: #fff;
+  color: #14a9c9;
+  font-size: 1.875vw;
+}
+.meeting-create-warpper .meeting-create-warp .create-success {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45.83333333vw;
+  height: 61.11111111vh;
+  background: #30333c;
+  border-radius: 1.04166667vw;
+  color: #fff;
+  font-size: 2.1875vw;
+}
+.meeting-create-warpper .meeting-create-warp .create-success h3 {
+  font-size: 3.125vw;
+  margin-top: 6.01851852vh;
+}
+.meeting-create-warpper .meeting-create-warp .create-success .create-success-msg {
+  margin-top: 4.62962963vh;
+}
+.meeting-create-warpper .meeting-create-warp .create-success .create-success-num {
+  margin-top: 3.7037037vh;
+}
+.meeting-create-warpper .meeting-create-warp .create-success .create-success-num span {
+  color: #23c1e3;
+}
+.meeting-create-warpper .meeting-create-warp .create-success .create-success-time {
+  margin-top: 3.7037037vh;
+}
+.meeting-create-warpper .meeting-create-warp .create-success button {
+  width: 16.66666667vw;
+  height: 10vh;
+  color: #14a9c9;
+  font-size: 1.875vw;
+  margin-top: 5.64814815vh;
+  border-radius: 5vh;
+  border: none;
+  background-color: #fff;
+}

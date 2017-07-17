@@ -1,0 +1,67 @@
+.about-us-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  border-radius: 4.47761194vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.about-us-wrapper .about-logo {
+  width: 42.5vw;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-us-wrapper .about-logo .logo {
+  width: 19.16666667vw;
+  height: 34.32835821vh;
+  background: url("../img/logo.png") center center no-repeat;
+  background-size: 100%;
+}
+.about-us-wrapper .about-logo .slogan {
+  width: 29.16666667vw;
+  height: 20.89552239vh;
+  background: url("../img/slogan.png") center center no-repeat;
+  background-size: 100%;
+}
+.about-us-wrapper .about-logo .version {
+  font-size: 3vw;
+  font-family: "PingFang SC";
+  color: #424242;
+}
+.about-us-wrapper .about-content {
+  width: 45.83333333vw;
+  margin-right: 6.66666667vw;
+  text-align: left;
+  font-family: "PingFang SC";
+  color: #424242;
+}
+.about-us-wrapper .about-content .about-title {
+  height: 31.34328358vh;
+  line-height: 31.34328358vh;
+  font-size: 3vw;
+  font-weight: 700;
+}
+.about-us-wrapper .about-content .about-remark {
+  font-size: 2.16666667vw;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.about-us-wrapper .about-content .about-detail {
+  margin-top: 7.46268657vh;
+  font-size: 2.16666667vw;
+}

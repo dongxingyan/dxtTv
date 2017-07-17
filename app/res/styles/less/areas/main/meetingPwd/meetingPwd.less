@@ -1,0 +1,78 @@
+@designWidth : 1920;
+@designHeight: 1080;
+@wcell: 100/@designWidth;
+@hcell: 100/@designHeight;
+.pwd-wrapper{
+
+	position: absolute;
+	z-index: 9999;
+	
+}
+.pwd-wrap{
+	display:flex;
+	align-items: center; 
+    justify-content: center; 
+    width: @wcell*1920vw;
+    height: @hcell*1080vh;
+	margin: 0 auto;
+	z-index: 9999;
+	position:absolute;
+}
+
+.input-pwd-box{
+	display: fixed;
+	z-index: 9999;
+	
+	h3{
+		text-align: center;
+		margin-top: @hcell*60vh;
+		line-height: @wcell*60vw;
+		font-size:  @wcell*60vw;
+		color: #000;
+	}
+	.pwd-text{
+		margin-top: @hcell*82vh;
+		width: @wcell*600vw;
+		height: @hcell*86vh;
+		border-radius: @hcell*43vh;
+		//border-style: none;
+		color: #999;
+		font-size: @wcell*30vw;
+		text-indent: @wcell*50vw;
+		border: @wcell*1vw solid #b8b8b8;
+	}
+	.pwd-text:hover,.pwd-text:active,.pwd-text:focus{
+		border: @wcell*2vw solid #d0b581;
+	}
+	.pwd-btn{
+		display: flex;
+		justify-content: space-between;
+		margin-top: @hcell*10vh;
+		width: @wcell*600vw;
+		height: @hcell*92vh;
+		button{
+			font-family: "PingFang SC";
+			width: @wcell*250vw;
+			height: @hcell*92vh;
+			border-style: none;
+			border-radius: @hcell*46vh;
+			background-color: #b8b8b8;
+			color:#999;
+			font-size: @wcell*36vw;
+		}
+
+	}
+	.pwd-tip{
+		height: @hcell*40vh;
+		margin-top: @hcell*20vh;
+		color: red;
+		font-size: @wcell*30vw;
+	}
+	.active{
+		border: @wcell*1vw solid #4bd7ff;  
+		-webkit-box-shadow:0 0 @wcell*50vw #4bd7ff;  
+		-moz-box-shadow:0 0 @wcell*50vw #4bd7ff;  
+		box-shadow:0 0 @wcell*50vw #4bd7ff;  
+	}
+}
+

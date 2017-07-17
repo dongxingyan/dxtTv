@@ -1,0 +1,24 @@
+.my-purchase-wrapper {
+  height: 100vh;
+  background: #fff;
+  border-radius: 4.47761194vh;
+  overflow: hidden;
+}
+.my-purchase-wrapper .helper {
+  width: 88.23529412vw;
+  height: 97.01492537vh;
+  margin: 0 auto;
+  font-family: "miscroft yahei";
+}
+.my-purchase-wrapper .helper h3 {
+  font-size: 3.88059701vh;
+  padding: 2.68656716vh 0;
+  border-bottom: 0.09803922vw solid #eee;
+}
+.my-purchase-wrapper .helper .what {
+  margin-top: 0;
+}
+.my-purchase-wrapper .helper p {
+  font-size: 2.98507463vh;
+  padding: 1.49253731 0;
+}

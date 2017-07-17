@@ -1,0 +1,179 @@
+@designWidth: 1060;
+@designHeight: 640;
+@wcell: 100/@designWidth;
+@hcell: 100/@designHeight;
+
+.setting-warpper {
+  width: @wcell*1060vw;
+  height: @hcell*640vh;
+  border-radius: @hcell*30vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  .setting-common {
+    width: @wcell*1060vw;
+    height: @hcell*310vh;
+    display: flex;
+    justify-content: space-between;
+    .setting-common1 {
+      width: @wcell*520vw;
+      height: @hcell*310vh;
+      line-height: @hcell*310vh;
+      border-radius: @wcell*30vw;
+      font-size: @wcell*34vw;
+      font-family: "HiraginoSansGB";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+    }
+    .setting-common1:hover, .setting-common1:active, .setting-common1:focus {
+      background: #e5ba6d;
+      color: #fff;
+      font-size: @wcell*42vw;
+      .pucharseIcon {
+        background: url('../img/purchaseIcon1.png') center center no-repeat;
+        background-size:100%;
+      }
+      .passwordIcon {
+        background: url('../img/passwordIcon1.png') center center no-repeat;
+        background-size:100%;
+      }
+      .serviceIcon {
+        background: url('../img/serviceIcon1.png') center center no-repeat;
+        background-size:100%;
+      }
+      .aboutIcon {
+        background: url('../img/aboutIcon1.png') center center no-repeat;
+        background-size:100%;
+      }
+    }
+    .my-purchars {
+      color: #e5ba6d;
+      background: #fff;
+      .pucharseIcon {
+        width: @wcell*88vw;
+        height: @hcell*88vh;
+        margin-right: @wcell*50vw;
+        background: url('../img/purchaseIcon.png') center center no-repeat;
+        background-size:100%;
+      }
+
+    }
+    .change-password {
+      color: #f17339;
+      .passwordIcon {
+        width: @wcell*70vw;
+        height: @hcell*88vh;
+        margin-right: @wcell*50vw;
+        background: url("../img/passwordIcon.png") center center no-repeat;
+        background-size:100%;
+
+      }
+    }
+    .contact {
+      color: #54d67c;
+      .serviceIcon {
+        width: @wcell*76vw;
+        height: @hcell*88vh;
+        margin-right: @wcell*50vw;
+        background: url('../img/serviceIcon.png') center center no-repeat;
+        background-size:100%;
+
+      }
+    }
+    .about-us {
+      color: #c38beb;
+      .aboutIcon {
+        width: @wcell*84vw;
+        height: @hcell*84vh;
+        margin-right: @wcell*50vw;
+        background: url('../img/aboutIcon.png') center center no-repeat;
+        background-size:100%;
+
+      }
+    }
+
+  }
+}
+
+.call-service-warpper {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: @wcell*1060vw;
+  height: @hcell*640vh;
+
+  .call-service-warp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: @wcell*1060vw;
+    height: @hcell*640vh;
+    .code {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: @wcell*480vw;
+      height: @hcell*300vh;
+      background: #30333c;
+      border-radius: @wcell*20vw;
+      button {
+        width: @wcell*250vw;
+        height: @hcell*92vh;
+        border-style: none;
+        border-radius: @wcell*46vw;
+        background-color: #fff;
+        color: #E5BA6D;
+        font-size: @wcell*36vw;
+      }
+      button:hover, button:active, button:focus {
+        color: #fff;
+        background: #E5BA6D;
+        font-size: @wcell*42vw;
+      }
+
+    }
+
+    .create-success {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: @wcell*880vw;
+      height: @hcell*660vh;
+      background: #30333c;
+      border-radius: @wcell*20vw;
+      color: #fff;
+      font-size: @wcell*42vw;
+
+      h3 {
+        font-size: @wcell*60vw;
+        margin-top: @hcell*65vh;
+      }
+      .create-success-msg {
+        margin-top: @hcell*50vh
+      }
+      .create-success-num {
+        margin-top: @hcell*40vh;
+        span {
+          color: #23c1e3;
+        }
+      }
+      .create-success-time {
+        margin-top: @hcell*40vh;
+      }
+      button {
+        width: @wcell*320vw;
+        height: @hcell*108vh;
+        color: #14a9c9;
+        font-size: @wcell*36vw;
+        margin-top: @hcell*61vh;
+        border-radius: @hcell*54vh;
+        border: none;
+        background-color: #fff;
+      }
+    }
+  }
+}

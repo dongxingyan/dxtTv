@@ -1,0 +1,68 @@
+@designWidth : 1120;
+@designHeight: 675;
+@wcell: 100/@designWidth;
+@hcell: 100/@designHeight;
+.demoWarpper{
+  //display: flex;
+  //align-items: center;
+  //flex-direction: column;
+  //justify-content:  flex-end;
+  width: @wcell*1120vw;
+  height: @hcell*675vh;
+  display:flex;
+  justify-content: space-between;
+  //margin:0 auto;
+  //background:#fff;
+  border-radius: @wcell*40vw;
+  //background: url("../img/create_bg.png");
+  //background-size: @wcell*1920vw @hcell*1080vh;
+  .exit-account{
+    display: flex;
+    justify-content: center;
+    width: @wcell*540vw;
+    height:@hcell*675vh;
+    background:#fff;
+    border-radius:@wcell*30vw;
+
+  }
+  .enter-myRoom{
+    display: flex;
+    justify-content: center;
+    width: @wcell*540vw;
+    height:@hcell*675vh;
+    //margin-left: @wcell*50vw;
+    background:#fff;
+    border-radius:@wcell*30vw;
+  }
+}
+
+
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+.common{
+  width: @wcell*440vw;
+  height: @hcell*108vh;
+  line-height: @hcell*108vh;
+  //color: #14a9c9;
+  font-size: @wcell*36vw;
+  border-radius: @hcell*54vh;
+  border: none;
+  text-align:center;
+  font-weight: 700;
+  background-color: #fff;
+}
+.exitBtn{
+  background:#e2d2a8;
+  color:#fff;
+}
+.enterBtn{
+  color:#000;
+}
+.create-tip{
+  height: @wcell*60vw;
+  line-height: @wcell*60vw;
+  margin-bottom: @wcell*50vw;
+  color: red;
+}

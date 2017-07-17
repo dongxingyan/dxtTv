@@ -1,0 +1,70 @@
+@designWidth : 1920;
+@designHeight: 1080;
+@wcell: 100/@designWidth;
+@hcell: 100/@designHeight;
+
+.pay-success-wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    width: @wcell*1920vw;
+    height: @hcell*1080vh;    
+    background: url("../img/combo_bg1.png");
+  	background-size: @wcell*1920vw @hcell*1080vh;	
+}
+.pay-success-wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: @wcell*1020vw;
+	height: @hcell*700vh;
+	background: #fff;
+	border-radius: @hcell*30vh;
+	h3{
+		width: @wcell*700vw;
+		text-align: center;
+		font-size: @wcell*50vw;
+		color: #4a4a4a;
+	}
+
+	img{
+		margin-top: @hcell*30vh;
+		width: @wcell*204vw;
+		height: @wcell*204vw;
+	}
+	p{
+		margin-top: @hcell*30vh;
+		width: @wcell*376vw;
+		text-align: center;
+		font-size: @wcell*36vw;
+		color: #4a4a4a;
+	}
+	.success-btn{
+		display: flex;
+		flex-direction: center;
+		justify-content: space-around;
+		width: @wcell*700vw;
+		margin-top: @hcell*30vh;
+		button{
+			width: @wcell*220vw;
+			height: @hcell*85vh;
+			border-radius: @hcell*45vh;
+			color: #fff;
+			font-size: @wcell*36vw;
+			font-family: "PingFang SC";
+			justify-content: space-around;
+			border:none;
+			background: #c7c7c7;
+		}
+		button:focus{
+			background: #d1ac6f;
+		}
+
+	}
+	.success-num{
+		display: inline-block;
+		margin: 0 @wcell*10vw;
+		font-size: @wcell*70vw;
+	}
+}

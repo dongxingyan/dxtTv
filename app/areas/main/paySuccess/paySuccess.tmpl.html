@@ -1,0 +1,11 @@
+<div class="pay-success-wrapper">
+	<div class="pay-success-wrap">
+		<h3>恭喜成功充值<span class="success-num">{{data.params.good_title | durationFilter}}</span>分钟!</h3>
+		<img src="res/img/pay-success1.png" alt="">
+		<p>剩余时间<span class="success-num">{{data.remainTime | durationFilter}}</span>分钟</p>
+		<div class="success-btn">
+			<button ng-click="actions.goIndex()" set-focus>确定</button>
+			<button ng-click="actions.goCombo()">继续充值</button>			
+		</div>
+	</div>
+</div>

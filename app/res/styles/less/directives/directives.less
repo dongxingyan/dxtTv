@@ -1,0 +1,32 @@
+@designWidth : 1920;
+@designHeight: 1080;
+@wcell: 100/@designWidth;
+@hcell: 100/@designHeight;
+
+.popBoxWarpper{
+	position: fixed;
+	top: 0 ;
+	z-index: 999999; 
+}
+.popBoxWarp{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    width: @wcell*1920vw;
+    height: @hcell*1080vh;
+    color: #ffffff;
+	
+}
+.popBox{
+	width: @wcell*800vw;
+    height: @hcell*300vh;
+    border-radius: @hcell*150vh;
+    background: #30333c;
+    span{
+    	display: block;
+    	width: @wcell*800vw;
+    	line-height:  @hcell*300vh;
+    	text-align: center;
+    	font-size: @wcell*60vw;
+    }
+}

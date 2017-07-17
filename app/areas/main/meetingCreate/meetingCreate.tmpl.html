@@ -1,0 +1,32 @@
+<div class="meetingCreateWarpper">
+    <button class="create-my-meeting" ng-click="actions.creatmeeting()" set-focus>激活我的房间</button>
+    <p class="create-tip" ng-model="data.createTip">{{data.createTip}}</p>
+</div>
+
+
+<script type="text/ng-template" show="showSuccessAlert" id="meeting-create-success.html">
+ <div class="meeting-create-warpper">
+        <div class="meeting-create-warp">
+            <div class="create-success">
+                <h3>激活成功!</h3>
+                <div class="create-success-msg">您的房间将在3分钟以内完成激活<span ng-bind="data.meetingRoomNum"></span></div>
+                <div class="create-success-num">您的房间号为<span ng-bind="data.meetingRoomNum"></span></div>
+                <div class="create-success-time">恭喜您获得<span ng-bind="data.remainTime"></span>分钟时长，有效期1个月</div>
+                <button id="meetingCreateConfirm" ng-keydown="actions.handleOkBtnKeydown($event)" ng-click="actions.confirm()">确定</button>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/ng-template" show="showBindingAlert" id="meeting-create-binding.html">
+    <div class="meeting-create-warpper">
+        <div class="meeting-create-warp">
+            <div class="code">
+                <h3>激活房间需要绑定手机号</h3>
+                <div class="pwd-btn">
+                    <button class="pwd-cancel" ng-click="actions.cancel()" ng-keydown="cancelKeydown($event)">取消</button>
+                    <button class="pwd-confirm" ng-click="actions.binding()" ng-keydown="bindingKeydown($event)" set-focus>去绑定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

@@ -1,0 +1,68 @@
+@designWidth: 1200;
+@designHeight: 670;
+@wcell: 100/@designWidth;
+@hcell: 100/@designHeight;
+
+.about-us-wrapper {
+  width: @wcell*1200vw;
+  height: @hcell*670vh;
+  background: #fff;
+  border-radius: @hcell*30vh;
+  display: flex;
+  justify-content: space-around;
+  .about-logo {
+    width: @wcell*510vw;
+    height: @hcell*670vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .logo {
+      width: @wcell*230vw;
+      height: @hcell*230vh;
+      background: url("../img/logo.png") center center no-repeat;
+      background-size: 100%;
+    }
+    .slogan {
+      width: @wcell*350vw;
+      height: @hcell*140vh;
+      //margin-top: @hcell*30vh;
+      //margin-bottom:@hcell*40vh;
+      background: url("../img/slogan.png") center center no-repeat;
+      background-size: 100%;
+
+    }
+    .version {
+      font-size: @wcell*36vw;
+      font-family: "PingFang SC";
+      color: rgb(66, 66, 66);
+    }
+
+  }
+  .about-content {
+    width: @wcell*550vw;
+    margin-right: @wcell*80vw;
+    text-align: left;
+    font-family: "PingFang SC";
+    color: rgb(66, 66, 66);
+    .about-title {
+      height: @hcell*210vh;
+      line-height: @hcell*210vh;
+      font-size: @wcell*36vw;
+      font-weight:700
+
+    }
+
+    .about-remark {
+      font-size: @wcell*26vw;
+      line-height:1.5;
+      font-weight:700
+    }
+
+    .about-detail {
+      margin-top:@hcell*50vh;
+      font-size: @wcell*26vw;
+    }
+
+  }
+}

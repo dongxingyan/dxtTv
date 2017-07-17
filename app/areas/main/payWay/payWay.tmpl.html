@@ -1,0 +1,59 @@
+<div class="pay-way-warp">
+	<div class="pay-title">
+		充值支付
+	</div>
+	<div class="pay-content">
+		<div class="pay-way-info">
+			<h3 class="pay-way-title">
+				充值信息
+			</h3>
+			<ul class="pay-way-list">
+				<li>
+					<span class="pay-list-title">会客厅号</span>
+					<span class="pay-list-value">{{data.conference_no}}</span>
+				</li>
+				<li>
+					<span class="pay-list-title">充值时长</span>
+					<span class="pay-list-value">{{data.params.good_title | durationFilter}}分钟</span>
+				</li>
+				<li>
+					<span class="pay-list-title">有效期至</span>
+					<span class="pay-list-value">{{data.time}}</span>
+				</li>
+				<li>
+					<span class="pay-list-title">充值金额</span>
+					<span class="pay-list-value">¥{{data.params.total_fee | priceFilter}}</span>
+				</li>
+			</ul>
+		</div>
+		<div class="pay-way-select">
+			<h3 class="pay-way-title">
+				充值方式
+			</h3>
+			<ul class="pay-way-img">
+				<a id="alipay" href="" ng-click="actions.alertCode('alipay')"  set-focus>
+					<i class="selected"></i>
+					<li><img src="res/img/zfb-pay.png" alt=""><span>支付宝</span></li>
+				</a>
+				<a id="wxpay" href="" ng-click="actions.alertCode('wxpay')" >
+					<i class="selected"></i>
+					<li ><img src="res/img/wx-pay.png" alt=""><span>微信</span></li>
+				</a>
+			</ul>
+		</div>
+	</div>
+
+</div>
+<script type="text/ng-template" id="code-box.html">
+	<div class="code-warpper">
+		<div class="code-warp">
+			<div class="code">
+				<img src="" alt="">
+				<div class="code-text">
+					<span>请打开支付宝“扫一扫”</span>
+					<span>扫描左侧二维码支付</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>

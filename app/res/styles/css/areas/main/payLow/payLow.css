@@ -1,0 +1,24 @@
+.input-pwd-box {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45.83333333vw;
+  height: 48.14814815vh;
+  background-color: #30333c;
+  border-radius: 0.41666667vw;
+}
+.input-pwd-box .pay-low {
+  text-align: center;
+  margin-top: 12.77777778vh;
+  line-height: 2.60416667vw;
+  font-size: 2.60416667vw;
+}
+.input-pwd-box .pay-low-btn {
+  margin-top: 9.25925926vh !important;
+}

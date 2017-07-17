@@ -1,0 +1,77 @@
+.pwd-wrapper {
+  position: absolute;
+  z-index: 9999;
+}
+.pwd-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  z-index: 9999;
+  position: absolute;
+}
+.input-pwd-box {
+  display: fixed;
+  z-index: 9999;
+}
+.input-pwd-box h3 {
+  text-align: center;
+  margin-top: 5.55555556vh;
+  line-height: 3.125vw;
+  font-size: 3.125vw;
+  color: #000;
+}
+.input-pwd-box .pwd-text {
+  margin-top: 7.59259259vh;
+  width: 31.25vw;
+  height: 7.96296296vh;
+  border-radius: 3.98148148vh;
+  color: #999;
+  font-size: 1.5625vw;
+  text-indent: 2.60416667vw;
+  border: 0.05208333vw solid #b8b8b8;
+}
+.input-pwd-box .pwd-text:hover,
+.input-pwd-box .pwd-text:active,
+.input-pwd-box .pwd-text:focus {
+  border: 0.10416667vw solid #d0b581;
+}
+.input-pwd-box .pwd-btn {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0.92592593vh;
+  width: 31.25vw;
+  height: 8.51851852vh;
+}
+.input-pwd-box .pwd-btn button {
+  font-family: "PingFang SC";
+  width: 13.02083333vw;
+  height: 8.51851852vh;
+  border-style: none;
+  border-radius: 4.25925926vh;
+  background-color: #b8b8b8;
+  color: #999;
+  font-size: 1.875vw;
+}
+.input-pwd-box .pwd-tip {
+  height: 3.7037037vh;
+  margin-top: 1.85185185vh;
+  color: red;
+  font-size: 1.5625vw;
+}
+.input-pwd-box .active {
+  border: 0.05208333vw solid #4bd7ff;
+  box-shadow: 0 0 2.60416667vw #4bd7ff;
+}
