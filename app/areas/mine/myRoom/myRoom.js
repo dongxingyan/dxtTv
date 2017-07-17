@@ -44,7 +44,7 @@ angular.module(myRoom.name,[
         //获取大麦相关信息
         setTimeout(function () {
             dxtApp.getDamyInfo(function(res){
-                console.log(res);
+                    console.log(res);
                 data.avatar=res.avatar;
                 if(data.avatar){
                     data.hasAvatar=true;
@@ -58,7 +58,8 @@ angular.module(myRoom.name,[
                 data.damyName=(res.damyName==""?res.damyNum:res.damyName);
             });
             $scope.$apply();
-        },200)
+        },300)
+
 
 
         //点击退出当前账号
